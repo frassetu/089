@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Astreinte – Interventions</title>
+
+  <!-- Styles -->
+  src/style.css
+  src/theme.css
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <nav class="topbar">
+    <button id="openMenu" class="menu-btn">☰</button>
+    <h1 class="title">Interventions</h1>
+  </nav>
+
+  <!-- MENU BURGER -->
+  <aside id="menuPanel" class="menu hidden">
+    <div class="menu-content">
+      <button id="closeMenu" class="close-btn">✕</button>
+
+      <h2>Menu</h2>
+
+      <ul class="menu-list">
+        <li>actions.html⚡ Actions rapides</a></li>
+        <li>interventions.html📋 Liste interventions</a></li>
+        <li>synthese.html📊 Synthèse période</a></li>
+        <li>#📄 Export PDF</a></li>
+        <li>#📊 Export Excel</a></li>
+        <li>index.html🔄 Nouvelle période</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="container">
+    <section class="card">
+      <h2>Toutes les interventions</h2>
+
+      <div id="intervList">
+        <!-- Rendu JS ici -->
+      </div>
+
+      actions.html
+        ◀ Retour
+      </button>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script type="module">
+    import { initMenuUI } from "./src/ui.js";
+    import { renderInterventionsList } from "./src/menu.js";
+
+    window.addEventListener("DOMContentLoaded", () => {
+      initMenuUI();
+      renderInterventionsList();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Astreinte – Actions rapides</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/theme.css" />
+</head>
+
+<body>
+
+  <!-- MENU BURGER -->
+  <nav class="topbar">
+    <button id="openMenu" class="menu-btn">☰</button>
+    <h1 class="title">Actions rapides</h1>
+  </nav>
+
+  <!-- OVERLAY MENU -->
+  <aside id="menuPanel" class="menu hidden">
+    <div class="menu-content">
+      <button id="closeMenu" class="close-btn">✕</button>
+
+      <h2>Menu</h2>
+
+      <ul class="menu-list">
+        <li><a href="synthese.html">📊 Synthèse période</a></li>
+        <li><a href="interventions.html">📋 Liste interventions</a></li>
+        <li><a href="#" id="calc089Btn">🕒 Temps de repos (089)</a></li>
+        <li><a href="#" id="calc11hBtn">⏱ Fenêtre minimale 11 h</a></li>
+        <li><a href="#" id="exportPDF">📄 Export PDF</a></li>
+        <li><a href="#" id="exportExcel">📊 Export Excel</a></li>
+        <li><a href="index.html">🔄 Nouvelle période</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="container">
+
+    <section class="card">
+      <h2>Intervention rapide</h2>
+
+      <div class="buttons-grid">
+        <button class="btn fast" data-duree="15">+15</button>
+        <button class="btn fast" data-duree="30">+30</button>
+        <button class="btn fast" data-duree="45">+45</button>
+        <button class="btn fast" data-duree="60">+1h</button>
+      </div>
+
+      <button id="manualBtn" class="btn secondary full">
+        Intervention manuelle
+      </button>
+    </section>
+  </main>
+
+  <!-- POPUP HORS ASTREINTE -->
+  <div id="popupOverlay" class="popup hidden">
+    <div class="popup-box">
+      <h2>⚠ Hors astreinte</h2>
+      <p id="popupMessage"></p>
+
+      <div class="popup-buttons">
+        <button id="popupCancel" class="btn secondary">Annuler</button>
+        <button id="popupConfirm" class="btn primary">Confirmer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONFIRMATION -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="src/actions.js"></script>
+</body>
+</html>

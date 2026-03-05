@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astreinte – Début de période</title>
+
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/theme.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Astreinte</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Début de la période</h2>
+
+      <label class="block">
+        Sélection du mercredi :
+        <input type="date" id="startWednesday" class="input" />
+      </label>
+
+      <h3>Jours fériés dans la période</h3>
+      <ul id="feriesList" class="list"></ul>
+
+      <button id="addFerieBtn" class="btn secondary">+ Ajouter un jour férié</button>
+
+      <button id="startBtn" class="btn primary full">
+l>
