@@ -1,248 +1,29 @@
-/* =============================== */
-/*   STYLE GLOBAL - MODE MODERNE   */
-/* =============================== */
-
-/* Layout général */
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--fg);
-}
-
-/* Container principal */
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* ------------------------------- */
-/*           HEADER                */
-/* ------------------------------- */
-.header {
-  background: var(--card);
-  padding: 15px 20px;
-  text-align: center;
-  font-weight: bold;
-  border-bottom: 2px solid var(--border);
-  color: var(--fg);
-}
-
-/* ------------------------------- */
-/*            TITRES               */
-/* ------------------------------- */
-h1, h2, h3 {
-  margin: 0 0 10px 0;
-  font-weight: 600;
-}
-
-/* ------------------------------- */
-/*              CARD               */
-/* ------------------------------- */
-.card {
-  background: var(--card);
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 3px 10px #0003;
-  margin-bottom: 20px;
-}
-
-/* ------------------------------- */
-/*            LISTE FÉRIÉS         */
-/* ------------------------------- */
-.list {
-  padding-left: 20px;
-  margin: 10px 0 20px 0;
-}
-
-.list li {
-  margin-bottom: 6px;
-}
-
-/* ------------------------------- */
-/*            INPUTS               */
-/* ------------------------------- */
-.input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: 2px solid var(--border);
-  background: var(--bg2);
-  color: var(--fg);
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-/* ------------------------------- */
-/*             BOUTONS             */
-/* ------------------------------- */
-.btn {
-  display: inline-block;
-  padding: 15px 18px;
-  border-radius: 15px;
-  border: none;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 10px 5px;
-  transition: 0.15s;
-  text-align: center;
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-.primary {
-  background: #4ade80;
-  color: #000;
-}
-
-.secondary {
-  background: #0ea5e9;
-  color: #fff;
-}
-
-.full {
-  width: 100%;
-}
-
-/* ------------------------------- */
-/*   GRILLE DES BOUTONS RAPIDES    */
-/* ------------------------------- */
-.buttons-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-/* Boutons +15 +30 +45 +1h */
-.fast {
-  background: #22c55e;
-  color: #000;
-  font-size: 22px;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 2px 6px #0004;
-}
-
-/* ------------------------------- */
-/*        MENU BURGER + PANEL      */
-/* ------------------------------- */
-.topbar {
-  background: var(--card);
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid var(--border);
-}
-
-.menu-btn {
-  background: #22c55e;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  font-size: 26px;
-  border: none;
-  margin-right: 15px;
-  box-shadow: 0 2px 6px #0005;
-}
-
-.title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 78%;
-  height: 100%;
-  background: var(--card);
-  padding: 20px;
-  box-shadow: -3px 0 10px #0005;
-  z-index: 50;
-}
-
-.menu.hidden {
-  display: none;
-}
-
-.close-btn {
-  background: #ef4444;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 20px;
-  float: right;
-}
-
-.menu-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 60px;
-}
-
-.menu-list li {
-  padding: 15px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 18px;
-}
-
-/* ------------------------------- */
-/*               POPUP             */
-/* ------------------------------- */
-.popup {
-  position: fixed;
-  inset: 0;
-  background: #0008;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
-}
-
-.popup.hidden {
-  display: none;
-}
-
-.popup-box {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 18px;
-  width: 85%;
-}
-
-.popup-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-/* ------------------------------- */
-/*               TOAST             */
-/* ------------------------------- */
-.toast {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #000c;
-  color: #fff;
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 16px;
-  z-index: 300;
-}
-
-.toast.hidden {
-  display: none;
-}
+/* STYLE GLOBAL - MODE MODERNE */
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;padding:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+.container{width:100%;max-width:600px;margin:auto;padding:20px}
+.header{background:var(--card);padding:15px 20px;text-align:center;font-weight:700;border-bottom:2px solid var(--border);color:var(--fg)}
+h1,h2,h3{margin:0 0 10px 0;font-weight:600}
+.card{background:var(--card);padding:20px;border-radius:16px;box-shadow:0 3px 10px #0003;margin-bottom:20px}
+.list{padding-left:20px;margin:10px 0 20px 0}
+.list li{margin-bottom:6px}
+.input{width:100%;padding:12px;border-radius:12px;border:2px solid var(--border);background:var(--bg2);color:var(--fg);font-size:16px;margin-top:5px}
+.btn{display:inline-block;padding:15px 18px;border-radius:15px;border:none;font-size:18px;font-weight:600;cursor:pointer;margin:10px 5px;transition:.15s;text-align:center}
+.btn:active{transform:scale(.95)}
+.primary{background:#4ade80;color:#000}.secondary{background:#0ea5e9;color:#fff}.full{width:100%}
+.buttons-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.fast{background:#22c55e;color:#000;font-size:22px;padding:20px;border-radius:16px;box-shadow:0 2px 6px #0004}
+.topbar{background:var(--card);padding:15px;display:flex;align-items:center;border-bottom:2px solid var(--border)}
+.menu-btn{background:#22c55e;width:52px;height:52px;border-radius:50%;font-size:26px;border:none;margin-right:15px;box-shadow:0 2px 6px #0005}
+.title{font-size:22px;font-weight:600}
+.menu{position:fixed;top:0;right:0;width:78%;height:100%;background:var(--card);padding:20px;box-shadow:-3px 0 10px #0005;z-index:50}
+.menu.hidden{display:none}
+.close-btn{background:#ef4444;padding:10px;border-radius:50%;font-size:20px;float:right}
+.menu-list{list-style:none;padding:0;margin-top:60px}
+.menu-list li{padding:15px 0;border-bottom:1px solid var(--border);font-size:18px;cursor:pointer}
+.popup{position:fixed;inset:0;background:#0008;display:flex;justify-content:center;align-items:center;z-index:200}
+.popup.hidden{display:none}
+.popup-box{background:var(--card);padding:25px;border-radius:18px;width:85%}
+.popup-buttons{display:flex;gap:10px;margin-top:20px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#000c;color:#fff;padding:12px 18px;border-radius:12px;font-size:16px;z-index:300}
+.toast.hidden{display:none}

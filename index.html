@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Astreinte – Début de période</title>
-
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="src/style.css" />
   <link rel="stylesheet" href="src/theme.css" />
-  <link rel="manifest" href="manifest.json" />
 </head>
-
 <body>
   <header class="header">
     <h1>Astreinte</h1>
@@ -29,5 +27,15 @@
 
       <button id="addFerieBtn" class="btn secondary">+ Ajouter un jour férié</button>
 
-      <button id="startBtn" class="btn primary full">
-l>
+      <button id="startBtn" class="btn primary full">➜ Commencer</button>
+    </section>
+  </main>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js'));
+    }
+  </script>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
